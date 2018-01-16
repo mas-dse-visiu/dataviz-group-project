@@ -98,7 +98,9 @@ function updateGraph(data,country) {
       .on("mouseover", function(d) {
           tooltip.transition()
                .duration(200)
-               .style("opacity", .9);
+               .style("opacity", .9)
+               .style("background-color", "#ccc")
+               .style("min-height", "75px");
           tooltip.html(d.Year + "<br/>Total: " + d.total 
             + "<br/>Ind: " + d.individual + ", Team: " + d.team 
             + "<br/> (" + xValue(d) + ", " + yValue(d) + ")")
