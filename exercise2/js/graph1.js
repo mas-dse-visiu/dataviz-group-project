@@ -78,5 +78,5 @@ function updateGraph1(data) {
       .attr("x", 42)
       .attr("y", 9.5)
       .attr("dy", "0.32em")
-      .text(function(d) { return d; });
+      .text(function(d) { return d.replace(/_/g, " "); });
 }
