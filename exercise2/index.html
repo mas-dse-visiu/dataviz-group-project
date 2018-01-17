@@ -95,7 +95,6 @@ d3.csv("./data/bar_agg.csv", function(error, data1) {
 
 	d3.selectAll(".countryselect")
 			.on("change", function () {
-          console.log("Works")
           cb = d3.select(this);
 
           newData1 = data1.filter(function(d) {return d.Country__ == cb.property("value")});
@@ -104,7 +103,7 @@ d3.csv("./data/bar_agg.csv", function(error, data1) {
           d3.selectAll('svg > g > *').remove(); 
 		  updateGraph1(newData1);
 		  updateGraph2(newData2);
-      updateScatter(cb.property("value"));
+		  updateScatter(cb.property("value"));
 
         });
 
@@ -113,14 +112,12 @@ d3.csv("./data/bar_agg.csv", function(error, data1) {
 	newData2 = data2.filter(function(d) {return d.Country__ == d3.select(".countryselect").node().value});
 	updateGraph1(newData1)
 	updateGraph2(newData2)
-  updateScatter(d3.select(".countryselect").node().value)
+	updateScatter(d3.select(".countryselect").node().value)
   });
 });
 
 </script>
 
-  <div id="viz"></div>
-  <div id="ratio"></div>
   <script type="text/javascript" src="./js/scatterchart.js"></script>
   <script type="text/javascript" src="./js/graph1.js"></script>
   <script type="text/javascript" src="./js/graph2.js"></script>
