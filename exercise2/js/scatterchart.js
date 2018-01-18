@@ -1,5 +1,5 @@
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
+    width = 500 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 /* 
@@ -40,7 +40,7 @@ var tooltip = d3.select("body").append("div")
 function updateScatter(country) {
 
   // load data
-  d3.csv("data/year_sport_country_total.csv", function(error, data) {
+  d3.csv("data/year_sport_country_total_ind_team.csv", function(error, data) {
 
     // change string (from CSV) into number format
     data.forEach(function(d) {
@@ -60,8 +60,10 @@ function updateGraph(data,country) {
   var sports = d3.map(data, function(d) { return cValue(d); });
 
   // don't want dots overlapping axis, so add in buffer to data domain
-  xScale.domain([d3.min(data, xValue)-0.1, d3.max(data, xValue)+0.1]);
-  yScale.domain([d3.min(data, yValue)-0.1, d3.max(data, yValue)+0.1]);
+  //xScale.domain([d3.min(data, xValue)-0.1, d3.max(data, xValue)+0.1]);
+  //yScale.domain([d3.min(data, yValue)-0.1, d3.max(data, yValue)+0.1]);
+  xScale.domain([0, 1]);
+  yScale.domain([0, 1]);
 
   // x-axis
   svg.append("g")
@@ -86,6 +88,27 @@ function updateGraph(data,country) {
       .attr("dy", ".71em")
       .style("text-anchor", "end")
       .text("Team");
+
+  // x-axis
+  svg.append("text")
+    .attr("transform","translate(" + (-100 + width/2) + " ," + (height + margin.top + 10) + ")")
+      .attr("fill", "#000")
+      .attr("font-weight", "bold")
+      .attr("text-anchor", "start")
+      .text("Ratio of Individual Medals Won"); 
+
+  // y-axis
+  svg.append("g")
+      .call(d3.axisLeft(yScale))
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x", -50 - (height / 2))
+      .attr("dy", "1em")
+      .attr("fill", "#000")
+      .attr("font-weight", "bold")
+      .attr("text-anchor", "start")
+      .text("Ratio of Team Medals Won");
 
   // draw dots
   svg.selectAll(".dot")
