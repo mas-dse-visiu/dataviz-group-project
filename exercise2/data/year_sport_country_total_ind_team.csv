@@ -1,16 +1,16 @@
 Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ratio
-1924,Biathlon,Finland,1,,3,,3,0.33,N/A
-1924,Biathlon,France,1,,3,,3,0.33,N/A
-1924,Biathlon,Switzerland,1,,3,,3,0.33,N/A
-1924,Bobsleigh,Belgium,,1,,3,3,N/A,0.33
-1924,Bobsleigh,Switzerland,,1,,3,3,N/A,0.33
-1924,Bobsleigh,United Kingdom,,1,,3,3,N/A,0.33
-1924,Curling,France,,1,,3,3,N/A,0.33
-1924,Curling,Sweden,,1,,3,3,N/A,0.33
-1924,Curling,United Kingdom,,1,,3,3,N/A,0.33
-1924,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1924,Ice Hockey,United Kingdom,,1,,3,3,N/A,0.33
-1924,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1924,Biathlon,Finland,1,,3,,3,0.33,0
+1924,Biathlon,France,1,,3,,3,0.33,0
+1924,Biathlon,Switzerland,1,,3,,3,0.33,0
+1924,Bobsleigh,Belgium,,1,,3,3,0,0.33
+1924,Bobsleigh,Switzerland,,1,,3,3,0,0.33
+1924,Bobsleigh,United Kingdom,,1,,3,3,0,0.33
+1924,Curling,France,,1,,3,3,0,0.33
+1924,Curling,Sweden,,1,,3,3,0,0.33
+1924,Curling,United Kingdom,,1,,3,3,0,0.33
+1924,Ice Hockey,Canada,,1,,3,3,0,0.33
+1924,Ice Hockey,United Kingdom,,1,,3,3,0,0.33
+1924,Ice Hockey,United States,,1,,3,3,0,0.33
 1924,Skating,Austria,2,1,22,3,25,0.09,0.33
 1924,Skating,Finland,8,1,22,3,25,0.36,0.33
 1924,Skating,France,,1,22,3,25,0,0.33
@@ -19,15 +19,15 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1924,Skating,Switzerland,1,,22,3,25,0.05,0
 1924,Skating,United Kingdom,1,,22,3,25,0.05,0
 1924,Skating,United States,2,,22,3,25,0.09,0
-1924,Skiing,Finland,1,,12,,12,0.08,N/A
-1924,Skiing,Norway,10,,12,,12,0.83,N/A
-1924,Skiing,United States,1,,12,,12,0.08,N/A
+1924,Skiing,Finland,1,,12,,12,0.08,0
+1924,Skiing,Norway,10,,12,,12,0.83,0
+1924,Skiing,United States,1,,12,,12,0.08,0
 1928,Bobsleigh,Germany,,1,3,3,6,0,0.33
 1928,Bobsleigh,United Kingdom,1,,3,3,6,0.33,0
 1928,Bobsleigh,United States,2,2,3,3,6,0.67,0.67
-1928,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1928,Ice Hockey,Sweden,,1,,3,3,N/A,0.33
-1928,Ice Hockey,Switzerland,,1,,3,3,N/A,0.33
+1928,Ice Hockey,Canada,,1,,3,3,0,0.33
+1928,Ice Hockey,Sweden,,1,,3,3,0,0.33
+1928,Ice Hockey,Switzerland,,1,,3,3,0,0.33
 1928,Skating,Austria,2,2,17,3,20,0.12,0.67
 1928,Skating,Belgium,1,,17,3,20,0.06,0
 1928,Skating,Finland,4,,17,3,20,0.24,0
@@ -35,15 +35,15 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1928,Skating,Norway,7,,17,3,20,0.41,0
 1928,Skating,Sweden,1,,17,3,20,0.06,0
 1928,Skating,United States,2,,17,3,20,0.12,0
-1928,Skiing,Czechoslovakia,1,,12,,12,0.08,N/A
-1928,Skiing,Norway,8,,12,,12,0.67,N/A
-1928,Skiing,Sweden,3,,12,,12,0.25,N/A
-1932,Bobsleigh,Germany,,1,,6,6,N/A,0.17
-1932,Bobsleigh,Switzerland,,1,,6,6,N/A,0.17
-1932,Bobsleigh,United States,,4,,6,6,N/A,0.67
-1932,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1932,Ice Hockey,Germany,,1,,3,3,N/A,0.33
-1932,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1928,Skiing,Czechoslovakia,1,,12,,12,0.08,0
+1928,Skiing,Norway,8,,12,,12,0.67,0
+1928,Skiing,Sweden,3,,12,,12,0.25,0
+1932,Bobsleigh,Germany,,1,,6,6,0,0.17
+1932,Bobsleigh,Switzerland,,1,,6,6,0,0.17
+1932,Bobsleigh,United States,,4,,6,6,0,0.67
+1932,Ice Hockey,Canada,,1,,3,3,0,0.33
+1932,Ice Hockey,Germany,,1,,3,3,0,0.33
+1932,Ice Hockey,United States,,1,,3,3,0,0.33
 1932,Skating,Austria,2,,18,3,21,0.11,0
 1932,Skating,Canada,6,,18,3,21,0.33,0
 1932,Skating,France,,1,18,3,21,0,0.33
@@ -51,15 +51,15 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1932,Skating,Norway,3,,18,3,21,0.17,0
 1932,Skating,Sweden,1,,18,3,21,0.06,0
 1932,Skating,United States,6,1,18,3,21,0.33,0.33
-1932,Skiing,Finland,3,,12,,12,0.25,N/A
-1932,Skiing,Norway,7,,12,,12,0.58,N/A
-1932,Skiing,Sweden,2,,12,,12,0.17,N/A
-1936,Bobsleigh,Switzerland,,3,,6,6,N/A,0.5
-1936,Bobsleigh,United Kingdom,,1,,6,6,N/A,0.17
-1936,Bobsleigh,United States,,2,,6,6,N/A,0.33
-1936,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1936,Ice Hockey,United Kingdom,,1,,3,3,N/A,0.33
-1936,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1932,Skiing,Finland,3,,12,,12,0.25,0
+1932,Skiing,Norway,7,,12,,12,0.58,0
+1932,Skiing,Sweden,2,,12,,12,0.17,0
+1936,Bobsleigh,Switzerland,,3,,6,6,0,0.5
+1936,Bobsleigh,United Kingdom,,1,,6,6,0,0.17
+1936,Bobsleigh,United States,,2,,6,6,0,0.33
+1936,Ice Hockey,Canada,,1,,3,3,0,0.33
+1936,Ice Hockey,United Kingdom,,1,,3,3,0,0.33
+1936,Ice Hockey,United States,,1,,3,3,0,0.33
 1936,Skating,Austria,3,1,18,3,21,0.17,0.33
 1936,Skating,Finland,4,,18,3,21,0.22,0
 1936,Skating,Germany,1,1,18,3,21,0.06,0.33
@@ -78,9 +78,9 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1948,Bobsleigh,Switzerland,,2,3,6,9,0,0.33
 1948,Bobsleigh,United Kingdom,1,,3,6,9,0.33,0
 1948,Bobsleigh,United States,1,3,3,6,9,0.33,0.5
-1948,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1948,Ice Hockey,Czechoslovakia,,1,,3,3,N/A,0.33
-1948,Ice Hockey,Switzerland,,1,,3,3,N/A,0.33
+1948,Ice Hockey,Canada,,1,,3,3,0,0.33
+1948,Ice Hockey,Czechoslovakia,,1,,3,3,0,0.33
+1948,Ice Hockey,Switzerland,,1,,3,3,0,0.33
 1948,Skating,Austria,2,,19,3,22,0.11,0
 1948,Skating,Belgium,,1,19,3,22,0,0.33
 1948,Skating,Canada,1,1,19,3,22,0.05,0.33
@@ -98,12 +98,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1948,Skiing,Sweden,6,1,31,3,34,0.19,0.33
 1948,Skiing,Switzerland,6,,31,3,34,0.19,0
 1948,Skiing,United States,2,,31,3,34,0.06,0
-1952,Bobsleigh,Switzerland,,2,,6,6,N/A,0.33
-1952,Bobsleigh,United States,,2,,6,6,N/A,0.33
-1952,Bobsleigh,West Germany,,2,,6,6,N/A,0.33
-1952,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1952,Ice Hockey,Sweden,,1,,3,3,N/A,0.33
-1952,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1952,Bobsleigh,Switzerland,,2,,6,6,0,0.33
+1952,Bobsleigh,United States,,2,,6,6,0,0.33
+1952,Bobsleigh,West Germany,,2,,6,6,0,0.33
+1952,Ice Hockey,Canada,,1,,3,3,0,0.33
+1952,Ice Hockey,Sweden,,1,,3,3,0,0.33
+1952,Ice Hockey,United States,,1,,3,3,0,0.33
 1952,Skating,Austria,1,,19,3,22,0.05,0
 1952,Skating,Canada,1,,19,3,22,0.05,0
 1952,Skating,France,1,,19,3,22,0.05,0
@@ -121,12 +121,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1952,Skiing,Norway,9,1,33,3,36,0.27,0.33
 1952,Skiing,Sweden,1,1,33,3,36,0.03,0.33
 1952,Skiing,United States,2,,33,3,36,0.06,0
-1956,Bobsleigh,Italy,,3,,6,6,N/A,0.5
-1956,Bobsleigh,Switzerland,,2,,6,6,N/A,0.33
-1956,Bobsleigh,United States,,1,,6,6,N/A,0.17
-1956,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1956,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1956,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1956,Bobsleigh,Italy,,3,,6,6,0,0.5
+1956,Bobsleigh,Switzerland,,2,,6,6,0,0.33
+1956,Bobsleigh,United States,,1,,6,6,0,0.17
+1956,Ice Hockey,Canada,,1,,3,3,0,0.33
+1956,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1956,Ice Hockey,United States,,1,,3,3,0,0.33
 1956,Skating,Austria,1,1,18,3,21,0.06,0.33
 1956,Skating,Canada,,1,18,3,21,0,0.33
 1956,Skating,Finland,1,,18,3,21,0.06,0
@@ -145,12 +145,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1956,Skiing,Sweden,6,2,36,6,42,0.17,0.33
 1956,Skiing,Switzerland,4,,36,6,42,0.11,0
 1956,Skiing,Unified Team of Germany,2,,36,6,42,0.06,0
-1960,Biathlon,Finland,1,,3,,3,0.33,N/A
-1960,Biathlon,Soviet Union,1,,3,,3,0.33,N/A
-1960,Biathlon,Sweden,1,,3,,3,0.33,N/A
-1960,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1960,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1960,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1960,Biathlon,Finland,1,,3,,3,0.33,0
+1960,Biathlon,Soviet Union,1,,3,,3,0.33,0
+1960,Biathlon,Sweden,1,,3,,3,0.33,0
+1960,Ice Hockey,Canada,,1,,3,3,0,0.33
+1960,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1960,Ice Hockey,United States,,1,,3,3,0,0.33
 1960,Skating,Canada,1,1,30,3,33,0.03,0.33
 1960,Skating,Czechoslovakia,1,,30,3,33,0.03,0
 1960,Skating,Finland,1,,30,3,33,0.03,0
@@ -172,15 +172,15 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1960,Skiing,Switzerland,2,,36,6,42,0.06,0
 1960,Skiing,Unified Team of Germany,5,,36,6,42,0.14,0
 1960,Skiing,United States,3,,36,6,42,0.08,0
-1964,Biathlon,Norway,1,,3,,3,0.33,N/A
-1964,Biathlon,Soviet Union,2,,3,,3,0.67,N/A
-1964,Bobsleigh,Austria,,1,,6,6,N/A,0.17
-1964,Bobsleigh,Canada,,1,,6,6,N/A,0.17
-1964,Bobsleigh,Italy,,3,,6,6,N/A,0.5
-1964,Bobsleigh,United Kingdom,,1,,6,6,N/A,0.17
-1964,Ice Hockey,Czechoslovakia,,1,,3,3,N/A,0.33
-1964,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1964,Ice Hockey,Sweden,,1,,3,3,N/A,0.33
+1964,Biathlon,Norway,1,,3,,3,0.33,0
+1964,Biathlon,Soviet Union,2,,3,,3,0.67,0
+1964,Bobsleigh,Austria,,1,,6,6,0,0.17
+1964,Bobsleigh,Canada,,1,,6,6,0,0.17
+1964,Bobsleigh,Italy,,3,,6,6,0,0.5
+1964,Bobsleigh,United Kingdom,,1,,6,6,0,0.17
+1964,Ice Hockey,Czechoslovakia,,1,,3,3,0,0.33
+1964,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1964,Ice Hockey,Sweden,,1,,3,3,0,0.33
 1964,Luge,Austria,1,2,6,3,9,0.17,0.67
 1964,Luge,Italy,,1,6,3,9,0,0.33
 1964,Luge,Unified Team of Germany,5,,6,3,9,0.83,0
@@ -206,14 +206,14 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1968,Biathlon,Norway,1,1,3,3,6,0.33,0.33
 1968,Biathlon,Soviet Union,2,1,3,3,6,0.67,0.33
 1968,Biathlon,Sweden,,1,3,3,6,0,0.33
-1968,Bobsleigh,Austria,,1,,6,6,N/A,0.17
-1968,Bobsleigh,Italy,,2,,6,6,N/A,0.33
-1968,Bobsleigh,Romania,,1,,6,6,N/A,0.17
-1968,Bobsleigh,Switzerland,,1,,6,6,N/A,0.17
-1968,Bobsleigh,West Germany,,1,,6,6,N/A,0.17
-1968,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1968,Ice Hockey,Czechoslovakia,,1,,3,3,N/A,0.33
-1968,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
+1968,Bobsleigh,Austria,,1,,6,6,0,0.17
+1968,Bobsleigh,Italy,,2,,6,6,0,0.33
+1968,Bobsleigh,Romania,,1,,6,6,0,0.17
+1968,Bobsleigh,Switzerland,,1,,6,6,0,0.17
+1968,Bobsleigh,West Germany,,1,,6,6,0,0.17
+1968,Ice Hockey,Canada,,1,,3,3,0,0.33
+1968,Ice Hockey,Czechoslovakia,,1,,3,3,0,0.33
+1968,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
 1968,Luge,Austria,1,1,6,3,9,0.17,0.33
 1968,Luge,East Germany,2,1,6,3,9,0.33,0.33
 1968,Luge,Italy,1,,6,3,9,0.17,0
@@ -246,12 +246,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1972,Biathlon,Norway,1,,3,3,6,0.33,0
 1972,Biathlon,Soviet Union,,1,3,3,6,0,0.33
 1972,Biathlon,Sweden,1,,3,3,6,0.33,0
-1972,Bobsleigh,Italy,,1,,6,6,N/A,0.17
-1972,Bobsleigh,Switzerland,,2,,6,6,N/A,0.33
-1972,Bobsleigh,West Germany,,3,,6,6,N/A,0.5
-1972,Ice Hockey,Czechoslovakia,,1,,3,3,N/A,0.33
-1972,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1972,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1972,Bobsleigh,Italy,,1,,6,6,0,0.17
+1972,Bobsleigh,Switzerland,,2,,6,6,0,0.33
+1972,Bobsleigh,West Germany,,3,,6,6,0,0.5
+1972,Ice Hockey,Czechoslovakia,,1,,3,3,0,0.33
+1972,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1972,Ice Hockey,United States,,1,,3,3,0,0.33
 1972,Luge,East Germany,6,2,6,3,9,1,0.67
 1972,Luge,Italy,,1,6,3,9,0,0.33
 1972,Skating,Austria,1,,30,3,33,0.03,0
@@ -282,12 +282,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1976,Biathlon,East Germany,,1,3,3,6,0,0.33
 1976,Biathlon,Finland,1,1,3,3,6,0.33,0.33
 1976,Biathlon,Soviet Union,2,1,3,3,6,0.67,0.33
-1976,Bobsleigh,East Germany,,2,,6,6,N/A,0.33
-1976,Bobsleigh,Switzerland,,2,,6,6,N/A,0.33
-1976,Bobsleigh,West Germany,,2,,6,6,N/A,0.33
-1976,Ice Hockey,Czechoslovakia,,1,,3,3,N/A,0.33
-1976,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1976,Ice Hockey,West Germany,,1,,3,3,N/A,0.33
+1976,Bobsleigh,East Germany,,2,,6,6,0,0.33
+1976,Bobsleigh,Switzerland,,2,,6,6,0,0.33
+1976,Bobsleigh,West Germany,,2,,6,6,0,0.33
+1976,Ice Hockey,Czechoslovakia,,1,,3,3,0,0.33
+1976,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1976,Ice Hockey,West Germany,,1,,3,3,0,0.33
 1976,Luge,Austria,,1,6,3,9,0,0.33
 1976,Luge,East Germany,4,1,6,3,9,0.67,0.33
 1976,Luge,West Germany,2,1,6,3,9,0.33,0.33
@@ -314,11 +314,11 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1980,Biathlon,East Germany,3,1,6,3,9,0.5,0.33
 1980,Biathlon,Soviet Union,3,1,6,3,9,0.5,0.33
 1980,Biathlon,West Germany,,1,6,3,9,0,0.33
-1980,Bobsleigh,East Germany,,4,,6,6,N/A,0.67
-1980,Bobsleigh,Switzerland,,2,,6,6,N/A,0.33
-1980,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1980,Ice Hockey,Sweden,,1,,3,3,N/A,0.33
-1980,Ice Hockey,United States,,1,,3,3,N/A,0.33
+1980,Bobsleigh,East Germany,,4,,6,6,0,0.67
+1980,Bobsleigh,Switzerland,,2,,6,6,0,0.33
+1980,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1980,Ice Hockey,Sweden,,1,,3,3,0,0.33
+1980,Ice Hockey,United States,,1,,3,3,0,0.33
 1980,Luge,Austria,,1,6,3,9,0,0.33
 1980,Luge,East Germany,2,1,6,3,9,0.33,0.33
 1980,Luge,Italy,1,1,6,3,9,0.17,0.33
@@ -352,12 +352,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1984,Biathlon,Norway,2,1,6,3,9,0.33,0.33
 1984,Biathlon,Soviet Union,,1,6,3,9,0,0.33
 1984,Biathlon,West Germany,2,1,6,3,9,0.33,0.33
-1984,Bobsleigh,East Germany,,4,,6,6,N/A,0.67
-1984,Bobsleigh,Soviet Union,,1,,6,6,N/A,0.17
-1984,Bobsleigh,Switzerland,,1,,6,6,N/A,0.17
-1984,Ice Hockey,Czechoslovakia,,1,,3,3,N/A,0.33
-1984,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1984,Ice Hockey,Sweden,,1,,3,3,N/A,0.33
+1984,Bobsleigh,East Germany,,4,,6,6,0,0.67
+1984,Bobsleigh,Soviet Union,,1,,6,6,0,0.17
+1984,Bobsleigh,Switzerland,,1,,6,6,0,0.17
+1984,Ice Hockey,Czechoslovakia,,1,,3,3,0,0.33
+1984,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1984,Ice Hockey,Sweden,,1,,3,3,0,0.33
 1984,Luge,East Germany,3,1,6,3,9,0.5,0.33
 1984,Luge,Italy,1,,6,3,9,0.17,0
 1984,Luge,Soviet Union,2,1,6,3,9,0.33,0.33
@@ -388,12 +388,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1988,Biathlon,Italy,1,1,6,3,9,0.17,0.33
 1988,Biathlon,Soviet Union,3,1,6,3,9,0.5,0.33
 1988,Biathlon,West Germany,,1,6,3,9,0,0.33
-1988,Bobsleigh,East Germany,,3,,6,6,N/A,0.5
-1988,Bobsleigh,Soviet Union,,2,,6,6,N/A,0.33
-1988,Bobsleigh,Switzerland,,1,,6,6,N/A,0.17
-1988,Ice Hockey,Finland,,1,,3,3,N/A,0.33
-1988,Ice Hockey,Soviet Union,,1,,3,3,N/A,0.33
-1988,Ice Hockey,Sweden,,1,,3,3,N/A,0.33
+1988,Bobsleigh,East Germany,,3,,6,6,0,0.5
+1988,Bobsleigh,Soviet Union,,2,,6,6,0,0.33
+1988,Bobsleigh,Switzerland,,1,,6,6,0,0.17
+1988,Ice Hockey,Finland,,1,,3,3,0,0.33
+1988,Ice Hockey,Soviet Union,,1,,3,3,0,0.33
+1988,Ice Hockey,Sweden,,1,,3,3,0,0.33
 1988,Luge,East Germany,4,2,6,3,9,0.67,0.67
 1988,Luge,Soviet Union,1,,6,3,9,0.17,0
 1988,Luge,West Germany,1,1,6,3,9,0.17,0.33
@@ -424,12 +424,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1992,Biathlon,Germany,5,2,12,6,18,0.42,0.33
 1992,Biathlon,Sweden,1,1,12,6,18,0.08,0.17
 1992,Biathlon,Unified Team,4,2,12,6,18,0.33,0.33
-1992,Bobsleigh,Austria,,1,,6,6,N/A,0.17
-1992,Bobsleigh,Germany,,3,,6,6,N/A,0.5
-1992,Bobsleigh,Switzerland,,2,,6,6,N/A,0.33
-1992,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1992,Ice Hockey,Czechoslovakia,,1,,3,3,N/A,0.33
-1992,Ice Hockey,Unified Team,,1,,3,3,N/A,0.33
+1992,Bobsleigh,Austria,,1,,6,6,0,0.17
+1992,Bobsleigh,Germany,,3,,6,6,0,0.5
+1992,Bobsleigh,Switzerland,,2,,6,6,0,0.33
+1992,Ice Hockey,Canada,,1,,3,3,0,0.33
+1992,Ice Hockey,Czechoslovakia,,1,,3,3,0,0.33
+1992,Ice Hockey,Unified Team,,1,,3,3,0,0.33
 1992,Luge,Austria,4,,6,3,9,0.67,0
 1992,Luge,Germany,2,2,6,3,9,0.33,0.67
 1992,Luge,Italy,,1,6,3,9,0,0.33
@@ -468,12 +468,12 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1994,Biathlon,Germany,4,2,12,6,18,0.33,0.33
 1994,Biathlon,Russia,3,2,12,6,18,0.25,0.33
 1994,Biathlon,Ukraine,1,,12,6,18,0.08,0
-1994,Bobsleigh,Germany,,2,,6,6,N/A,0.33
-1994,Bobsleigh,Italy,,1,,6,6,N/A,0.17
-1994,Bobsleigh,Switzerland,,3,,6,6,N/A,0.5
-1994,Ice Hockey,Canada,,1,,3,3,N/A,0.33
-1994,Ice Hockey,Finland,,1,,3,3,N/A,0.33
-1994,Ice Hockey,Sweden,,1,,3,3,N/A,0.33
+1994,Bobsleigh,Germany,,2,,6,6,0,0.33
+1994,Bobsleigh,Italy,,1,,6,6,0,0.17
+1994,Bobsleigh,Switzerland,,3,,6,6,0,0.5
+1994,Ice Hockey,Canada,,1,,3,3,0,0.33
+1994,Ice Hockey,Finland,,1,,3,3,0,0.33
+1994,Ice Hockey,Sweden,,1,,3,3,0,0.33
 1994,Luge,Austria,2,,6,3,9,0.33,0
 1994,Luge,Germany,2,1,6,3,9,0.33,0.33
 1994,Luge,Italy,2,2,6,3,9,0.33,0.67
@@ -516,22 +516,22 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 1998,Biathlon,Norway,3,2,12,6,18,0.25,0.33
 1998,Biathlon,Russia,1,2,12,6,18,0.08,0.33
 1998,Biathlon,Ukraine,1,,12,6,18,0.08,0
-1998,Bobsleigh,Canada,,1,,7,7,N/A,0.14
-1998,Bobsleigh,France,,1,,7,7,N/A,0.14
-1998,Bobsleigh,Germany,,2,,7,7,N/A,0.29
-1998,Bobsleigh,Italy,,1,,7,7,N/A,0.14
-1998,Bobsleigh,Switzerland,,1,,7,7,N/A,0.14
-1998,Bobsleigh,United Kingdom,,1,,7,7,N/A,0.14
-1998,Curling,Canada,,2,,6,6,N/A,0.33
-1998,Curling,Denmark,,1,,6,6,N/A,0.17
-1998,Curling,Norway,,1,,6,6,N/A,0.17
-1998,Curling,Sweden,,1,,6,6,N/A,0.17
-1998,Curling,Switzerland,,1,,6,6,N/A,0.17
-1998,Ice Hockey,Canada,,1,,6,6,N/A,0.17
-1998,Ice Hockey,Czech Republic,,1,,6,6,N/A,0.17
-1998,Ice Hockey,Finland,,2,,6,6,N/A,0.33
-1998,Ice Hockey,Russia,,1,,6,6,N/A,0.17
-1998,Ice Hockey,United States,,1,,6,6,N/A,0.17
+1998,Bobsleigh,Canada,,1,,7,7,0,0.14
+1998,Bobsleigh,France,,1,,7,7,0,0.14
+1998,Bobsleigh,Germany,,2,,7,7,0,0.29
+1998,Bobsleigh,Italy,,1,,7,7,0,0.14
+1998,Bobsleigh,Switzerland,,1,,7,7,0,0.14
+1998,Bobsleigh,United Kingdom,,1,,7,7,0,0.14
+1998,Curling,Canada,,2,,6,6,0,0.33
+1998,Curling,Denmark,,1,,6,6,0,0.17
+1998,Curling,Norway,,1,,6,6,0,0.17
+1998,Curling,Sweden,,1,,6,6,0,0.17
+1998,Curling,Switzerland,,1,,6,6,0,0.17
+1998,Ice Hockey,Canada,,1,,6,6,0,0.17
+1998,Ice Hockey,Czech Republic,,1,,6,6,0,0.17
+1998,Ice Hockey,Finland,,2,,6,6,0,0.33
+1998,Ice Hockey,Russia,,1,,6,6,0,0.17
+1998,Ice Hockey,United States,,1,,6,6,0,0.17
 1998,Luge,Austria,1,,6,3,9,0.17,0
 1998,Luge,Germany,4,1,6,3,9,0.67,0.33
 1998,Luge,Italy,1,,6,3,9,0.17,0
@@ -577,14 +577,14 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 2002,Bobsleigh,Switzerland,1,2,6,9,15,0.17,0.22
 2002,Bobsleigh,United Kingdom,1,,6,9,15,0.17,0
 2002,Bobsleigh,United States,3,3,6,9,15,0.5,0.33
-2002,Curling,Canada,,2,,6,6,N/A,0.33
-2002,Curling,Norway,,1,,6,6,N/A,0.17
-2002,Curling,Switzerland,,2,,6,6,N/A,0.33
-2002,Curling,United Kingdom,,1,,6,6,N/A,0.17
-2002,Ice Hockey,Canada,,2,,6,6,N/A,0.33
-2002,Ice Hockey,Russia,,1,,6,6,N/A,0.17
-2002,Ice Hockey,Sweden,,1,,6,6,N/A,0.17
-2002,Ice Hockey,United States,,2,,6,6,N/A,0.33
+2002,Curling,Canada,,2,,6,6,0,0.33
+2002,Curling,Norway,,1,,6,6,0,0.17
+2002,Curling,Switzerland,,2,,6,6,0,0.33
+2002,Curling,United Kingdom,,1,,6,6,0,0.17
+2002,Ice Hockey,Canada,,2,,6,6,0,0.33
+2002,Ice Hockey,Russia,,1,,6,6,0,0.17
+2002,Ice Hockey,Sweden,,1,,6,6,0,0.17
+2002,Ice Hockey,United States,,2,,6,6,0,0.33
 2002,Luge,Austria,1,,6,3,9,0.17,0
 2002,Luge,Germany,4,1,6,3,9,0.67,0.33
 2002,Luge,Italy,1,,6,3,9,0.17,0
@@ -635,16 +635,16 @@ Year,Sports,Country,individual,team,ind_total,team_total,total,ind_ratio,team_ra
 2006,Bobsleigh,Switzerland,2,2,6,9,15,0.33,0.22
 2006,Bobsleigh,United Kingdom,1,,6,9,15,0.17,0
 2006,Bobsleigh,United States,,1,6,9,15,0,0.11
-2006,Curling,Canada,,2,,6,6,N/A,0.33
-2006,Curling,Finland,,1,,6,6,N/A,0.17
-2006,Curling,Sweden,,1,,6,6,N/A,0.17
-2006,Curling,Switzerland,,1,,6,6,N/A,0.17
-2006,Curling,United States,,1,,6,6,N/A,0.17
-2006,Ice Hockey,Canada,,1,,6,6,N/A,0.17
-2006,Ice Hockey,Czech Republic,,1,,6,6,N/A,0.17
-2006,Ice Hockey,Finland,,1,,6,6,N/A,0.17
-2006,Ice Hockey,Sweden,,2,,6,6,N/A,0.33
-2006,Ice Hockey,United States,,1,,6,6,N/A,0.17
+2006,Curling,Canada,,2,,6,6,0,0.33
+2006,Curling,Finland,,1,,6,6,0,0.17
+2006,Curling,Sweden,,1,,6,6,0,0.17
+2006,Curling,Switzerland,,1,,6,6,0,0.17
+2006,Curling,United States,,1,,6,6,0,0.17
+2006,Ice Hockey,Canada,,1,,6,6,0,0.17
+2006,Ice Hockey,Czech Republic,,1,,6,6,0,0.17
+2006,Ice Hockey,Finland,,1,,6,6,0,0.17
+2006,Ice Hockey,Sweden,,2,,6,6,0,0.33
+2006,Ice Hockey,United States,,1,,6,6,0,0.17
 2006,Luge,Austria,,1,6,3,9,0,0.33
 2006,Luge,Germany,3,1,6,3,9,0.5,0.33
 2006,Luge,Italy,1,1,6,3,9,0.17,0.33
