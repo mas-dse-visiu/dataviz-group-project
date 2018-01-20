@@ -57,7 +57,7 @@ function updateGraph1(data) {
       .attr("fill", "#000")
       .attr("font-weight", "bold")
       .attr("text-anchor", "start")
-      .text("Medals");
+      .text("Medals Won");
 
   var legend = g1.append("g")
       .attr("font-family", "sans-serif")
