@@ -52,7 +52,7 @@ function updateGraph1(data) {
       .call(d3.axisLeft(y).ticks(null, "s"))
     .append("text")
       .attr("x", 2)
-      .attr("y", y(y.ticks().pop()) - 5)
+      .attr("y", y(y.ticks().pop()))
       .attr("dy", "0.32em")
       .attr("fill", "#000")
       .attr("font-weight", "bold")
