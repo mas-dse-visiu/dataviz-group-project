@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+</style>
+<select name="country" class="countryselect">
+	<option value="Australia">Australia</option>
+	<option value="Austria">Austria</option>
+	<option value="Belarus">Belarus</option>
+	<option value="Belgium">Belgium</option>
+	<option value="Bulgaria">Bulgaria</option>
+	<option value="Canada">Canada</option>
+	<option value="China">China</option>
+	<option value="Croatia">Croatia</option>
+	<option value="Czech Republic">Czech Republic</option>
+	<option value="Czechoslovakia">Czechoslovakia</option>
+	<option value="Denmark">Denmark</option>
+	<option value="East Germany">East Germany</option>
+	<option value="Estonia">Estonia</option>
+	<option value="Finland">Finland</option>
+	<option value="France">France</option>
+	<option value="Germany">Germany</option>
+	<option value="Hungary">Hungary</option>
+	<option value="Italy">Italy</option>
+	<option value="Japan">Japan</option>
+	<option value="Kazakhstan">Kazakhstan</option>
+	<option value="Korea, North">Korea, North</option>
+	<option value="Korea, South">Korea, South</option>
+	<option value="Latvia">Latvia</option>
+	<option value="Liechtenstein">Liechtenstein</option>
+	<option value="Luxembourg">Luxembourg</option>
+	<option value="Netherlands">Netherlands</option>
+	<option value="New Zealand">New Zealand</option>
+	<option value="Norway">Norway</option>
+	<option value="Poland">Poland</option>
+	<option value="Romania">Romania</option>
+	<option value="Russia">Russia</option>
+	<option value="Slovakia">Slovakia</option>
+	<option value="Slovenia">Slovenia</option>
+	<option value="Soviet Union">Soviet Union</option>
+	<option value="Spain">Spain</option>
+	<option value="Sweden">Sweden</option>
+	<option value="Switzerland">Switzerland</option>
+	<option value="Ukraine">Ukraine</option>
+	<option value="Unified Team">Unified Team</option>
+	<option value="Unified Team of Germany">Unified Team of Germany</option>
+	<option value="United Kingdom">United Kingdom</option>
+	<option value="United States">United States</option>
+	<option value="Uzbekistan">Uzbekistan</option>
+	<option value="West Germany">West Germany</option>
+	<option value="Yugoslavia">Yugoslavia</option>
+</select> 
+<body>
+<br>
+<script src="./js/d3.v4.min.js"></script>
+<script>
+
+var margin1 = {top: 20, right: 20, bottom: 30, left: 40},
+    width1 = 750 - margin1.left - margin1.right,
+    height1 = 500 - margin1.top - margin1.bottom
+
+var	g1 = d3.select("body")
+	.append("svg")
+		.attr("width", width1 + margin1.left + margin1.right)
+		.attr("height", height1 + margin1.top + margin1.bottom)
+	.append("g")
+		.attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
+
+
+d3.csv("./data/bar_agg.csv", function(error, data1) {
+  if (error) throw error;
+
+    //console.log(JSON.stringify(data));
+
+	d3.selectAll(".countryselect")
+			.on("change", function () {
+          cb = d3.select(this);
+
+          newData1 = data1.filter(function(d) {return d.Country__ == cb.property("value")});
+
+          d3.selectAll('svg > g > *').remove(); 
+		  updateGraph1(newData1);
+		  updateScatter(cb.property("value"));
+
+        });
+
+	// initial
+	newData1 = data1.filter(function(d) {return d.Country__ == d3.select(".countryselect").node().value});
+	updateGraph1(newData1)
+	updateScatter(d3.select(".countryselect").node().value)
+
+});
+
+</script>
+
+  <script type="text/javascript" src="./js/scatterchart.js"></script>
+  <script type="text/javascript" src="./js/graph1.js"></script>
+</body>
