@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<title>West Nile Virus Spread Across California (2006-2015)</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">
+<script src="js/leaflet.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+
+</head>
+<body>
+<h1>
+<div id="sliderAmount">West Nile Virus Spread Across California</div>
+</h1>
+
+<div id='map'></div>
+<div class="slidecontainer">
+	<input class=slider id="slide" type="range" min="1" max="519" step="1" value="35" onchange="change_map(this.value)">
+</div>
+
+<script type="text/javascript" src="data/testjson.js"></script>
+<script type="text/javascript" src="data/sliderlookup.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+
+</body>
+</html>
