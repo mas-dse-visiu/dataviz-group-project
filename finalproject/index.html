@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Show polygon information on click</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='./css/combined.css' rel='stylesheet' />
+</head>
+<body>
+    <div id="header">Vegetation Exploration Tool</div>
+    <div id="sidebar-left">Select Vegetation<br>
+      <select id="d3-dropdown" onchange="toggleLayer(this)">
+        <option selected disabled>Choose one</option>
+        <option value="0">0</option>
+        <option value="3014">3014 Central and Southern California Mixed Evergreen Woodland</option>
+        <option value="3092">3092 Southern California Coastal Scrub</option>
+        <option value="3096">3096 California Maritime Chaparral</option>
+        <option value="3097">3097 California Mesic Chaparral</option>
+        <option value="3099">3099 California Xeric Serpentine Chaparral</option>
+        <option value="3110">3110 Southern California Dry-Mesic Chaparral</option>
+        <option value="3118">3118 Southern California Oak Woodland and Savanna</option>
+        <option value="3129">3129 California Central Valley and Southern Coastal Grassland</option>
+        <option value="3130">3130 California Mesic Serpentine Grassland</option>
+        <option value="3152">3152 California Montane Riparian Systems</option>
+        <option value="3155">3155 North American Warm Desert Riparian Forest and Woodland</option>
+        <option value="3181">3181 Introduced Upland Vegetation-Annual Grassland</option>
+        <option value="3182">3182 Introduced Upland Vegetation-Perennial Grassland and Forbland</option>
+        <option value="3183">3183 Introduced Upland Vegetation-Annual and Biennial Forbland</option>
+        <option value="3184">3184 California Annual Grassland</option>
+        <option value="3221">3221 Mediterranean California Sparsely Vegetated Systems II</option>
+        <option value="3292">3292 Open Water</option>
+        <option value="3294">3294 Barren</option>
+        <option value="3296">3296 Developed-Low Intensity</option>
+        <option value="3297">3297 Developed-Medium Intensity</option>
+        <option value="3298">3298 Developed-High Intensity</option>
+        <option value="3299">3299 Developed-Roads</option>
+        <option value="3900">3900 Western Cool Temperate Urban Deciduous Forest</option>
+        <option value="3901">3901 Western Cool Temperate Urban Evergreen Forest</option>
+        <option value="3902">3902 Western Cool Temperate Urban Mixed Forest</option>
+        <option value="3903">3903 Western Cool Temperate Urban Herbaceous</option>
+        <option value="3904">3904 Western Cool Temperate Urban Shrubland</option>
+        <option value="3910">3910 Western Warm Temperate Urban Deciduous Forest</option>
+        <option value="3911">3911 Western Warm Temperate Urban Evergreen Forest</option>
+        <option value="3912">3912 Western Warm Temperate Urban Mixed Forest</option>
+        <option value="3913">3913 Western Warm Temperate Urban Herbaceous</option>
+        <option value="3914">3914 Western Warm Temperate Urban Shrubland</option>
+        <option value="3923">3923 Western Cool Temperate Developed Ruderal Shrubland</option>
+        <option value="3924">3924 Western Cool Temperate Developed Ruderal Grassland</option>
+        <option value="3926">3926 Western Warm Temperate Developed Ruderal Evergreen Forest</option>
+        <option value="3927">3927 Western Warm Temperate Developed Ruderal Mixed Forest</option>
+        <option value="3928">3928 Western Warm Temperate Developed Ruderal Shrubland</option>
+        <option value="3929">3929 Western Warm Temperate Developed Ruderal Grassland</option>
+        <option value="3964">3964 Western Cool Temperate Row Crop</option>
+        <option value="3984">3984 Western Warm Temperate Row Crop</option>
+      </select>
+      <p id="selected-dropdown"></p>
+      <svg width="300" height="100"></svg>
+      <p id="point-info"></p>
+    </div>
+    <div id="map"></div>
+    <div id="footer"></div>
+</body>
+<script src="./js/d3.v4.min.js"></script>
+<script src="./data/mapgeojsonsplit.js"></script>
+<script src="./data/mapband.js"></script>
+<script src="./js/map.js"></script>
+<script src="./js/sidebar.js"></script>
+</html>

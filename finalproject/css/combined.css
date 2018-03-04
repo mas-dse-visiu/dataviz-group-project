@@ -1,0 +1,93 @@
+#map {
+  height: 80%;
+  position:relative
+  float:left;
+  width:75%;
+}
+/* Optional: Makes the sample page fill the window. */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/*
+#floating-panel {
+  position: absolute;
+  top: 6%;
+  left: 55%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+#floating-panel {
+  background-color: #fff;
+  border: 1px solid #999;
+  left: 55%;
+  padding: 5px;
+  position: absolute;
+  top: 6%;
+  z-index: 5;
+}
+*/
+
+#header{
+  background-color: lightblue;
+  width:100%;
+  height:5%;
+  text-align: center;
+}
+#sidebar-left{
+  float:left;
+  height: 80%;
+  width:25%;
+  background-color: lightgray;
+  overflow: scroll;
+  padding: 5px;
+  box-sizing: border-box;
+}
+/*
+#main{
+  float:left;
+  width:70%;
+  background-color: lightgray;
+}
+
+#sidebar-right{
+  float:left;
+  width:15%;
+  background-color: red;
+}
+*/
+#footer{
+  clear:both;
+  height: 15%;
+  width: 100%;
+  text-align: left;
+  background-color: lightblue;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+/*
+#sidebar-left, #main, #sidebar-right{
+  min-height: 600px       
+}
+*/
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text {
+  fill: #fff;
+  font: 10px sans-serif;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
