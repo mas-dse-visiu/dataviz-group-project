@@ -128,7 +128,7 @@ function toggleLayer() {
                 ],
                 default: "#088"
                 },
-                'fill-opacity': 0.2
+                'fill-opacity': 0.5
             }
 
     });
