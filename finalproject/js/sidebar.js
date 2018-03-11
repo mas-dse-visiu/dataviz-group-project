@@ -52,12 +52,12 @@ function generateClassHist(sel) {
 }
 generateClassHist(0)
 
-d3.select("select")
+d3.select("#veg-dropdown")
   .on("change",function(d){
-    var selected = d3.select("#veg-dropdown").node().value;
+    var selected = d3.select(this).property('value');
     //console.log( selected );
     //d3.select("#selected-dropdown").text(selected);
     
-    generateClassHist(selected)
+    generateClassHist(selected);
 
-})
+});
