@@ -2,18 +2,16 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Show polygon information on click</title>
+    <title>Vegetation Exploration Tool</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
     <link href='./css/combined.css' rel='stylesheet' />
 </head>
 <body>
-    <div id="header">Vegetation Exploration Tool</div>
-    <div id="sidebar-left">Select Vegetation<br>
-      <select id="d3-dropdown" onchange="toggleLayer(this)">
-        <option selected disabled>Choose one</option>
-        <option value="0">0</option>
+    <div id="header">Select Vegetation
+      <select id="veg-dropdown" onchange="toggleLayer()">
+        <option disabled selected>Choose one</option>
         <option value="3014">3014 Central and Southern California Mixed Evergreen Woodland</option>
         <option value="3092">3092 Southern California Coastal Scrub</option>
         <option value="3096">3096 California Maritime Chaparral</option>
@@ -54,17 +52,33 @@
         <option value="3929">3929 Western Warm Temperate Developed Ruderal Grassland</option>
         <option value="3964">3964 Western Cool Temperate Row Crop</option>
         <option value="3984">3984 Western Warm Temperate Row Crop</option>
+        <option value="0">0 N/A</option>
       </select>
+      Select Colorizer Type
+      <select id="type-dropdown" onchange="toggleLayer()">
+        <option disabled selected>Choose one</option>
+        <option value="clabel">24 Kmeans Cluster</option>
+        <option value="flabel">13 Anderson Fuel</option>
+      </select>
+    </div>
+    <div id="sidebar-left">
       <p id="selected-dropdown"></p>
       <svg width="300" height="100"></svg>
       <p id="point-info"></p>
     </div>
+    <nav id="menu">
+      <a href="#" id="open-popup">Open Tracks</a>
+      <a href="#" id="close-popup">Close Tracks</a>  
+    </nav>
     <div id="map"></div>
-    <div id="footer"></div>
+    <div id="footer">
+      <p id="pop-info"></p>
+    </div> 
 </body>
 <script src="./js/d3.v4.min.js"></script>
 <script src="./data/mapgeojsonsplit.js"></script>
 <script src="./data/mapband.js"></script>
+<script src="./data/labeldes.js"></script>
 <script src="./js/map.js"></script>
 <script src="./js/sidebar.js"></script>
 </html>

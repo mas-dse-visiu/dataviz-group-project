@@ -5,7 +5,12 @@ var map = new mapboxgl.Map({
     zoom: 10
 });
 
-var layertracker = []
+map.addControl(new mapboxgl.NavigationControl());
+
+var layertracker = [];
+var currentpop
+var objectpop = new Map();
+var openPopup = true;
 
 map.on('load', function () {
 
@@ -29,7 +34,53 @@ map.on('load', function () {
 
 });
 
-function toggleLayer(n) {
+function format_marker(opop) {
+    var latlong_string = '';
+    //for (index = 0; index < arraypop.length; ++index){
+    for(var [key, value] of opop) {
+      //latlong_string += String(index) + ') ' + String(latlong[index].getPosition().lat()) + ', ' + String(latlong[index].getPosition().lng()) + '<br>';
+      latlong_string += "<button onclick=\"deleteToArrayPop(" + value.point.features[0].properties.id + ")\">Remove</button> ";
+      latlong_string += " id: " + String(value.point.features[0].properties.id) + ",";
+      latlong_string += " long: " + String(value.point.lngLat.lng.toFixed(3)) + ",";
+      latlong_string += " lat: " + String(value.point.lngLat.lat.toFixed(3)) + ",";
+      latlong_string += " vlabel: " + String(value.point.features[0].properties.vlabel) + ",";
+      latlong_string += " clabel: " + String(value.point.features[0].properties.clabel) + ",";
+      latlong_string += " flabel: " + String(value.point.features[0].properties.flabel) + ",";
+
+      tempArray = specData[+value.point.features[0].properties.id].map(function(each_element){
+            return Number(each_element.toFixed(3));
+      });
+
+      latlong_string += " spectrum: [" + String(tempArray) + "]";
+      latlong_string += "<br>"
+    }
+    
+    //console.log(latlong_string);
+    return latlong_string;
+}
+
+function addToArrayPop(){
+    currentref = new mapboxgl.Popup()
+        .setLngLat(currentpop.lngLat)
+        .setHTML("\nid: " + currentpop.features[0].properties.id
+            + "\n<br>vlabel: " + currentpop.features[0].properties.vlabel
+            + "\n<br>clabel: " + currentpop.features[0].properties.clabel
+            + "\n<br>flabel: " + currentpop.features[0].properties.flabel);
+    objectpop.set(String(currentpop.features[0].properties.id),{"point": currentpop, "reference": currentref});
+    document.getElementById('pop-info').innerHTML = format_marker(objectpop);
+}
+
+function deleteToArrayPop(id){
+    objectpop.get(String(id)).reference.remove();
+    objectpop.delete(String(id));
+    document.getElementById('pop-info').innerHTML = format_marker(objectpop);
+}
+
+function toggleLayer() {
+
+    n = document.getElementById('veg-dropdown');
+    m = document.getElementById('type-dropdown');
+
     if (layertracker.length > 0){
         var lastid = layertracker.pop()
         map.removeLayer(lastid);
@@ -47,7 +98,7 @@ function toggleLayer(n) {
             'paint': {
                 //'fill-color': '#088',
                 'fill-color': {
-                property: 'clabel',
+                property: m.value,
                 type: 'categorical',
                 stops: [
                     ['0', '#a6cee3'],
@@ -83,11 +134,19 @@ function toggleLayer(n) {
     });
 
     map.on('click', n.value, function (e) {
+    currentpop = e;
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML("vlabel: " + e.features[0].properties.vlabel
+        .setHTML("\nid: " + currentpop.features[0].properties.id
+            + "\n<br>vlabel: " + e.features[0].properties.vlabel
             + "\n<br>clabel: " + e.features[0].properties.clabel
             + "\n<br>flabel: " + e.features[0].properties.flabel
+            + "\n<br><button onclick=\"addToArrayPop()\">Track</button>")
+            .addTo(map);
+    document.getElementById('point-info').innerHTML = String("\nid: " + currentpop.features[0].properties.id
+            + "\n<br>vlabel: <div class=\"tooltip\">" + e.features[0].properties.vlabel + "<span class=\"tooltiptext\">" + veglabelName[+e.features[0].properties.vlabel] +"</span></div>"
+            + "\n<br>clabel: " + e.features[0].properties.clabel
+            + "\n<br>flabel: <div class=\"tooltip\">" + e.features[0].properties.flabel + "<span class=\"tooltiptext\">" + fuellabelName[+e.features[0].properties.flabel] +"</span></div>"
             + "\n<br>coastal: " + specData[+e.features[0].properties.id][0]
             + "\n<br>blue: " + specData[+e.features[0].properties.id][1]
             + "\n<br>green: " + specData[+e.features[0].properties.id][2]
@@ -96,21 +155,23 @@ function toggleLayer(n) {
             + "\n<br>swirone: " + specData[+e.features[0].properties.id][5]
             + "\n<br>swirtwo: " + specData[+e.features[0].properties.id][6]
             + "\n<br>cirrus: " + specData[+e.features[0].properties.id][7]
-            + "\n<br>ndvi: " + specData[+e.features[0].properties.id][8]  )
-        .addTo(map);
-    document.getElementById('point-info').innerHTML = String("vlabel: " + e.features[0].properties.vlabel
-            + "\n<br>clabel: " + e.features[0].properties.clabel
-            + "\n<br>flabel: " + e.features[0].properties.flabel
-            + "\n<br>coastal: " + specData[+e.features[0].properties.id][0]
-            + "\n<br>blue: " + specData[+e.features[0].properties.id][1]
-            + "\n<br>green: " + specData[+e.features[0].properties.id][2]
-            + "\n<br>red: " + specData[+e.features[0].properties.id][3]
-            + "\n<br>nir: " + specData[+e.features[0].properties.id][4]
-            + "\n<br>swirone: " + specData[+e.features[0].properties.id][5]
-            + "\n<br>swirtwo: " + specData[+e.features[0].properties.id][6]
-            + "\n<br>cirrus: " + specData[+e.features[0].properties.id][7]
-            + "\n<br>ndvi: " + specData[+e.features[0].properties.id][8] );
+            + "\n<br>ndvi: " + specData[+e.features[0].properties.id][8] 
+             );
     });
 
     layertracker.push(n.value)
 }
+
+document.getElementById('open-popup').onclick = function(e) {
+    for(var [key, value] of objectpop) {
+        value.reference.addTo(map);
+    }
+}
+
+document.getElementById('close-popup').onclick = function(e) {
+    for(var [key, value] of objectpop) {
+        value.reference.remove();
+    }
+}
+
+
