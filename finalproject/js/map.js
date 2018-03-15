@@ -157,6 +157,8 @@ function toggleLayer() {
             + "\n<br>cirrus: " + specData[+e.features[0].properties.id][7]
             + "\n<br>ndvi: " + specData[+e.features[0].properties.id][8] 
              );
+
+        drawHist(e.features[0].properties.vlabel,specData[+e.features[0].properties.id]);
     });
 
     layertracker.push(n.value)
