@@ -143,19 +143,19 @@ function toggleLayer() {
             + "\n<br>flabel: " + e.features[0].properties.flabel
             + "\n<br><button onclick=\"addToArrayPop()\">Track</button>")
             .addTo(map);
-    document.getElementById('point-info').innerHTML = String("\nid: " + currentpop.features[0].properties.id
+    document.getElementById('left').innerHTML = String("\n<b>Area Info</b><br><br><br>id: " + currentpop.features[0].properties.id
             + "\n<br>vlabel: <div class=\"tooltip\">" + e.features[0].properties.vlabel + "<span class=\"tooltiptext\">" + veglabelName[+e.features[0].properties.vlabel] +"</span></div>"
             + "\n<br>clabel: " + e.features[0].properties.clabel
-            + "\n<br>flabel: <div class=\"tooltip\">" + e.features[0].properties.flabel + "<span class=\"tooltiptext\">" + fuellabelName[+e.features[0].properties.flabel] +"</span></div>"
-            + "\n<br>coastal: " + specData[+e.features[0].properties.id][0]
-            + "\n<br>blue: " + specData[+e.features[0].properties.id][1]
-            + "\n<br>green: " + specData[+e.features[0].properties.id][2]
-            + "\n<br>red: " + specData[+e.features[0].properties.id][3]
-            + "\n<br>nir: " + specData[+e.features[0].properties.id][4]
-            + "\n<br>swirone: " + specData[+e.features[0].properties.id][5]
-            + "\n<br>swirtwo: " + specData[+e.features[0].properties.id][6]
-            + "\n<br>cirrus: " + specData[+e.features[0].properties.id][7]
-            + "\n<br>ndvi: " + specData[+e.features[0].properties.id][8] 
+            + "\n<br>flabel: <div class=\"tooltip\">" + e.features[0].properties.flabel + "<span class=\"tooltiptext\">" + fuellabelName[+e.features[0].properties.flabel] +"</span></div>");
+    document.getElementById('right').innerHTML = String("\ncoastal: " + specData[+e.features[0].properties.id][0].toFixed(5)
+            + "\n<br>blue: " + specData[+e.features[0].properties.id][1].toFixed(5)
+            + "\n<br>green: " + specData[+e.features[0].properties.id][2].toFixed(5)
+            + "\n<br>red: " + specData[+e.features[0].properties.id][3].toFixed(5)
+            + "\n<br>nir: " + specData[+e.features[0].properties.id][4].toFixed(5)
+            + "\n<br>swirone: " + specData[+e.features[0].properties.id][5].toFixed(5)
+            + "\n<br>swirtwo: " + specData[+e.features[0].properties.id][6].toFixed(5)
+            + "\n<br>cirrus: " + specData[+e.features[0].properties.id][7].toFixed(5)
+            + "\n<br>ndvi: " + specData[+e.features[0].properties.id][8].toFixed(5)
              );
 
         drawHist(e.features[0].properties.vlabel,specData[+e.features[0].properties.id]);

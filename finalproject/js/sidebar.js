@@ -1,5 +1,5 @@
-var width = 300;
-var height = 300;
+var width = 250;
+var height = 250;
 var center = [width / 2, height / 2];
 var innerRadius = 50;
 var outerRadius = 100;
