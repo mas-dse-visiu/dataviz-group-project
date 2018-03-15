@@ -83,8 +83,8 @@ function arcTween(a) {
 
 drawPie(3092);
 
-d3.select("select")
+d3.select("#veg-dropdown")
   .on("change",function(d){
-    var selected = d3.select("#d3-dropdown").node().value;
+    var selected = d3.select("#veg-dropdown").node().value;
     drawPie(selected);
-})
+});
