@@ -53,21 +53,18 @@ function drawHist(label,spectrum)
       .data([top[0].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
-      .style('stroke','RED')
       .style('stroke-width','0.5px');
 
     svg.append("path")
       .data([top[1].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
-      .style('stroke','GREEN')
       .style('stroke-width','0.5px');
 
     svg.append("path")
       .data([top[2].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
-      .style('stroke','GOLD')
       .style('stroke-width','0.5px');
 
     // Add the X Axis
