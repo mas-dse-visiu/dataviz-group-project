@@ -162,6 +162,7 @@ function toggleLayer() {
     });
 
     layertracker.push(n.value)
+    drawPie();
 }
 
 document.getElementById('open-popup').onclick = function(e) {

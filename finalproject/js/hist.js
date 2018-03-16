@@ -9,9 +9,9 @@ function drawHist(label,spectrum)
     //var spectrum = [0.12,0.1,0.08,0.075,0.14,0.18,0.11,0.0007,0.3]
     var band = ['Coastal','Blue','Green','Red','NIR','SWIR1','SWIR2','Cirrus','NDVI'];
 
-    var margin = {top: 20, right: 20, bottom: 30, left: 50},
-        width = 300 - margin.left - margin.right,
-        height = 300 - margin.top - margin.bottom;
+    var margin = {top: 20, right: 20, bottom: 20, left: 20},
+        width = 250 - margin.left - margin.right,
+        height = 250 - margin.top - margin.bottom;
 
     // set the ranges
     var x = d3.scaleLinear().range([0, width]);
@@ -32,6 +32,13 @@ function drawHist(label,spectrum)
         .attr("transform",
               "translate(" + margin.left + "," + margin.top + ")");
 
+    svg.append('text')
+      .attr('x', (width + margin.left + margin.right)/2)
+      .attr('y', 0)
+      .attr('text-anchor', 'middle')
+      .attr('font-weight', 'bold')
+      .text('Closest Spectral Profiles')
+
     // Scale the range of the data
     x.domain(d3.extent(spectrum, function(d,i) { return i; }));
     y.domain([0, 0.5]);//d3.max(spectrum, function(d) { return d; })]);
@@ -46,19 +53,22 @@ function drawHist(label,spectrum)
       .data([top[0].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
-      .style('stroke','red');
+      .style('stroke','RED')
+      .style('stroke-width','0.5px');
 
     svg.append("path")
       .data([top[1].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
-      .style('stroke','red');
+      .style('stroke','GREEN')
+      .style('stroke-width','0.5px');
 
     svg.append("path")
       .data([top[2].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
-      .style('stroke','red');
+      .style('stroke','GOLD')
+      .style('stroke-width','0.5px');
 
     // Add the X Axis
     svg.append("g")
@@ -68,38 +78,78 @@ function drawHist(label,spectrum)
     // Add the Y Axis
     svg.append("g")
       .call(d3.axisLeft(y));
+
+
+    svg.append('rect')
+      .attr('x',margin.left/2)
+      .attr('y',15)
+      .attr('width',8)
+      .attr('height',8)
+      .style('fill','RED');
+
+    svg.append('rect')
+      .attr('x',margin.left/2)
+      .attr('y',15+margin.top)
+      .attr('width',8)
+      .attr('height',8)
+      .style('fill','GREEN');
+
+    svg.append('rect')
+      .attr('x',margin.left/2)
+      .attr('y',15+margin.top*2)
+      .attr('width',8)
+      .attr('height',8)
+      .style('fill','GOLD');
+
+    svg.append("text")
+      .attr("transform", "translate("+margin.left+","+margin.top+")")
+      .attr("dy", ".35em")
+      .attr("text-anchor", "start")
+      .style('font-size','8pt')
+      .style("fill", "RED")
+      .text(top[0][9]);
+
+    svg.append("text")
+      .attr("transform", "translate("+margin.left+","+margin.top*2+")")
+      .attr("dy", ".35em")
+      .attr("text-anchor", "start")
+      .style('font-size','8pt')
+      .style("fill", "GREEN")
+      .text(top[1][9]);
+
+    svg.append("text")
+      .attr("transform", "translate("+margin.left+","+margin.top*3+")")
+      .attr("dy", ".35em")
+      .attr("text-anchor", "start")
+      .style('font-size','8pt')
+      .style("fill", "GOLD")
+      .text(top[2][9]);
 }
 
 function top3 (spectrum)
 {
-    var lf = landfireAvg.slice();
-    console.log(lf);
+    var lf = [];//landfireAvg.slice();
 
-    for (var i = 0; i < lf.length; i++)
+    for (var i = 0; i < landfireAvg.length; i++)
     {
-        var key = lf[i].pop();
-        lf[i].push(Math.abs(d3.sum(lf[i]) - d3.sum(spectrum)));
-        lf[i].push(key);
+        lf.push(landfireAvg[i].slice(0,10))
+        lf[i].push(Math.abs(d3.sum(landfireAvg[i].slice(0,9)) - d3.sum(spectrum)));
     }
 
     lf.sort(sortArray);
 
-    var r = [];
-    r.push(lf.pop());
-    r.push(lf.pop());
-    r.push(lf.pop());
-
-    return r;
+    return lf.slice(0,3);
 }
 
 
 function sortArray(a, b) {
-    if (a[9] === b[9]) {
+    if (a[10] === b[10]) {
         return 0;
     }
     else {
-        return (a[9] > b[9]) ? -1 : 1;
+        return (a[10] < b[10]) ? -1 : 1;
     }
 }
-//var spectrum = [0.12,0.1,0.08,0.075,0.14,0.18,0.11,0.0007,0.3];
 
+//var spectrum = [0.12,0.1,0.08,0.075,0.14,0.18,0.11,0.0007,0.3];
+//drawHist(3092,spectrum);
