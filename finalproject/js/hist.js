@@ -53,18 +53,21 @@ function drawHist(label,spectrum)
       .data([top[0].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
+      .style('stroke','RED')
       .style('stroke-width','0.5px');
 
     svg.append("path")
       .data([top[1].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
+      .style('stroke','GREEN')
       .style('stroke-width','0.5px');
 
     svg.append("path")
       .data([top[2].slice(0,9)])
       .attr("class", "line")
       .attr("d", valueline)
+      .style('stroke','GOLD')
       .style('stroke-width','0.5px');
 
     // Add the X Axis
@@ -103,7 +106,7 @@ function drawHist(label,spectrum)
       .attr("dy", ".35em")
       .attr("text-anchor", "start")
       .style('font-size','8pt')
-      .style("fill", "RED")
+      //.style("fill", "RED")
       .text(top[0][9]);
 
     svg.append("text")
@@ -111,7 +114,7 @@ function drawHist(label,spectrum)
       .attr("dy", ".35em")
       .attr("text-anchor", "start")
       .style('font-size','8pt')
-      .style("fill", "GREEN")
+      //.style("fill", "GREEN")
       .text(top[1][9]);
 
     svg.append("text")
@@ -119,7 +122,7 @@ function drawHist(label,spectrum)
       .attr("dy", ".35em")
       .attr("text-anchor", "start")
       .style('font-size','8pt')
-      .style("fill", "GOLD")
+      //.style("fill", "GOLD")
       .text(top[2][9]);
 }
 
