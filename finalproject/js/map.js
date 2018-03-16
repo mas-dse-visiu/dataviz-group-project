@@ -1,8 +1,8 @@
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'https://openmaptiles.github.io/positron-gl-style/style-cdn.json',
-    center: [-117.0864, 33.1192],
-    zoom: 10
+    center: [-117.169867,33.081251],
+    zoom: 11
 });
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -151,15 +151,15 @@ function toggleLayer() {
             + "\n<br>vlabel: <div class=\"tooltip\">" + e.features[0].properties.vlabel + "<span class=\"tooltiptext\">" + veglabelName[+e.features[0].properties.vlabel] +"</span></div>"
             + "\n<br>clabel: " + e.features[0].properties.clabel
             + "\n<br>flabel: <div class=\"tooltip\">" + e.features[0].properties.flabel + "<span class=\"tooltiptext\">" + fuellabelName[+e.features[0].properties.flabel] +"</span></div>");
-    document.getElementById('right').innerHTML = String("\ncoastal: " + specData[+e.features[0].properties.id][0].toFixed(5)
-            + "\n<br>blue: " + specData[+e.features[0].properties.id][1].toFixed(5)
-            + "\n<br>green: " + specData[+e.features[0].properties.id][2].toFixed(5)
-            + "\n<br>red: " + specData[+e.features[0].properties.id][3].toFixed(5)
-            + "\n<br>nir: " + specData[+e.features[0].properties.id][4].toFixed(5)
-            + "\n<br>swirone: " + specData[+e.features[0].properties.id][5].toFixed(5)
-            + "\n<br>swirtwo: " + specData[+e.features[0].properties.id][6].toFixed(5)
-            + "\n<br>cirrus: " + specData[+e.features[0].properties.id][7].toFixed(5)
-            + "\n<br>ndvi: " + specData[+e.features[0].properties.id][8].toFixed(5)
+    document.getElementById('right').innerHTML = String("\n(0) coastal: " + specData[+e.features[0].properties.id][0].toFixed(5)
+            + "\n<br>(1) blue: " + specData[+e.features[0].properties.id][1].toFixed(5)
+            + "\n<br>(2) green: " + specData[+e.features[0].properties.id][2].toFixed(5)
+            + "\n<br>(3) red: " + specData[+e.features[0].properties.id][3].toFixed(5)
+            + "\n<br>(4) nir: " + specData[+e.features[0].properties.id][4].toFixed(5)
+            + "\n<br>(5) swirone: " + specData[+e.features[0].properties.id][5].toFixed(5)
+            + "\n<br>(6) swirtwo: " + specData[+e.features[0].properties.id][6].toFixed(5)
+            + "\n<br>(7) cirrus: " + specData[+e.features[0].properties.id][7].toFixed(5)
+            + "\n<br>(8) ndvi: " + specData[+e.features[0].properties.id][8].toFixed(5)
              );
 
         drawHist(e.features[0].properties.vlabel,specData[+e.features[0].properties.id]);
